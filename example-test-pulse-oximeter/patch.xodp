@@ -1,4 +1,5 @@
 {
+  "description": "Patch to test pulse-oximeter. Run in debug mode.",
   "links": [
     {
       "id": "ry6aon-yt",

@@ -1,3 +1,6 @@
 {
-  "name": "sparkfun-pulse-oximeter"
+  "description": "XOD library for the SparkFun Pulse Oximeter and Heart Rate Monitor (SEN-15291). The sensor is an I²C based biometric sensor, utilising two chips from Maxim Integrated: the MAX32664 Bio Metric Sensor Hub and the MAX30101 Pulse Oximetry and Heart-Rate Module. Wraps https://github.com/sparkfun/SparkFun_Bio_Sensor_Hub_Library",
+  "license": "MIT",
+  "name": "sparkfun-pulse-oximeter",
+  "version": "0.0.1"
 }
