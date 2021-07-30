@@ -1,0 +1,124 @@
+{
+  "description": "SparkFun Pulse Oximeter and Heart-Rate Sensor. The sensor is an I²C based biometric sensor, utilising two chips from Maxim Integrated: the MAX32664 Bio Metric Sensor Hub and the MAX30101 Pulse Oximetry and Heart-Rate Module.",
+  "nodes": [
+    {
+      "id": "Sy9nLiZkY",
+      "position": {
+        "units": "slots",
+        "x": -10,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "Update. Trigger read.",
+      "id": "ryt6Ij-JY",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": -7,
+        "y": -1
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "I²C bus.",
+      "id": "S1IeDoZ1t",
+      "label": "I2C",
+      "position": {
+        "units": "slots",
+        "x": -10,
+        "y": -1
+      },
+      "type": "xod/i2c/input-i2c"
+    },
+    {
+      "description": "Pulse on read.",
+      "id": "rJObPo-yY",
+      "label": "Done",
+      "position": {
+        "units": "slots",
+        "x": -5,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Heart rate (beats per minute).",
+      "id": "HkNmvsWJK",
+      "label": "BPM",
+      "position": {
+        "units": "slots",
+        "x": -10,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Oxygen saturation (%).",
+      "id": "B1K7vobyK",
+      "label": "SpO2",
+      "position": {
+        "units": "slots",
+        "x": -9,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Sensor's confidence in the reported data. Range: 0 to 100%.",
+      "id": "rJNjwsWJF",
+      "label": "Conf",
+      "position": {
+        "units": "slots",
+        "x": -8,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Finger detection status. 00h = no object detected, 01h = object detected, 02h = object other than finger detected, 03h = finger detected.",
+      "id": "HkThusWJF",
+      "label": "Status",
+      "position": {
+        "units": "slots",
+        "x": -7,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/output-byte"
+    },
+    {
+      "description": "Finger detection status extended. 0 = success, 1 = not ready, -1 = object detected, -2 = excessive sensor device motion, -3 = no object detected, -4 = pressing too hard, -5 = object other than finger detected, -6 excessive finger motion.",
+      "id": "rJ_7Fob1F",
+      "label": "exStat",
+      "position": {
+        "units": "slots",
+        "x": -6,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Reset pin.",
+      "id": "BypH5sb1F",
+      "label": "Reset",
+      "position": {
+        "units": "slots",
+        "x": -9,
+        "y": -1
+      },
+      "type": "xod/patch-nodes/input-port"
+    },
+    {
+      "description": "Multi-function input/output pin.",
+      "id": "BkQ89sZyK",
+      "label": "MFIO",
+      "position": {
+        "units": "slots",
+        "x": -8,
+        "y": -1
+      },
+      "type": "xod/patch-nodes/input-port"
+    }
+  ]
+}
