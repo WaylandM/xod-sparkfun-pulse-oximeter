@@ -99,6 +99,9 @@
       "type": "xod/patch-nodes/output-number"
     },
     {
+      "boundLiterals": {
+        "__out__": "D4"
+      },
       "description": "Reset pin.",
       "id": "BypH5sb1F",
       "label": "Reset",
@@ -110,6 +113,9 @@
       "type": "xod/patch-nodes/input-port"
     },
     {
+      "boundLiterals": {
+        "__out__": "D5"
+      },
       "description": "Multi-function input/output pin.",
       "id": "BkQ89sZyK",
       "label": "MFIO",
