@@ -19,7 +19,7 @@ node {
         
         if (isSettingUp()) {
             auto wire = getValue<input_I2C>(ctx);
-            wire->begin();
+            
             if (bioHub.begin(*wire)!=0){
                 raiseError(ctx);
                 return;
